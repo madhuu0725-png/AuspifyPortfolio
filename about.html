@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" data-accent="indigo">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About Madhulatha Konka - MERN Full Stack Developer (B.Tech ECE, CGPA 8.1). Background, education, certifications, and technical summary.">
+  <title>About Me | Madhulatha Konka</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="navbar-wrapper">
+    <nav class="navbar" id="main-nav" aria-label="Main Navigation">
+      <a href="index.html" class="nav-brand">
+        <span class="nav-logo-badge">MK</span>
+        <span>Madhulatha<span style="color: var(--primary);">.dev</span></span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="index.html#home" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link active">About</a></li>
+        <li><a href="projects.html" class="nav-link">Projects</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="btn-icon" data-toggle-theme title="Toggle Theme" aria-label="Toggle Dark/Light Mode">
+          <svg class="theme-icon-sun" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          <svg class="theme-icon-moon" style="display: none;" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+
+        <button class="btn btn-primary btn-sm" onclick="window.ModalSystem.openResumeModal()">
+          <span>Resume</span>
+          <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+        </button>
+
+        <button class="nav-toggle-btn" id="mobile-menu-toggle" aria-label="Open mobile menu">
+          <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer-overlay" id="mobile-drawer-overlay"></div>
+  <aside class="mobile-drawer" id="mobile-drawer">
+    <div class="mobile-drawer-header">
+      <div class="nav-brand"><span class="nav-logo-badge">MK</span><span>Madhulatha</span></div>
+      <button class="modal-close-btn" id="mobile-drawer-close">&times;</button>
+    </div>
+    <ul class="mobile-nav-links">
+      <li><a href="index.html" class="mobile-nav-link">🏠 Home</a></li>
+      <li><a href="about.html" class="mobile-nav-link active">👤 About Me</a></li>
+      <li><a href="projects.html" class="mobile-nav-link">💼 Project Showcase</a></li>
+      <li><a href="contact.html" class="mobile-nav-link">📫 Contact</a></li>
+    </ul>
+  </aside>
+
+  <!-- Main Content -->
+  <main style="padding-top: 8rem; padding-bottom: 5rem;">
+    <div class="container">
+      
+      <!-- Hero Intro Banner -->
+      <div class="section-header">
+        <div class="section-badge">Professional Profile</div>
+        <h1 class="section-title">MERN Stack Engineer & <span class="gradient-primary">Fast Learner</span></h1>
+        <p class="section-subtitle">Dedicated full-stack developer with a strong foundation in React.js, Node.js, Express.js, MongoDB, and Python.</p>
+      </div>
+
+      <div class="about-grid" style="margin-bottom: 5rem;">
+        
+        <!-- Left: Image & Fact Sheet -->
+        <div class="glass-card" style="padding: 2rem;">
+          <div style="width: 100%; aspect-ratio: 1/1; border-radius: var(--radius-lg); overflow: hidden; margin-bottom: 1.5rem; border: 1px solid var(--border-subtle);">
+            <img src="assets/images/profile_avatar.jpg" alt="Madhulatha Konka" style="width: 100%; height: 100%; object-fit: cover; object-position: center center;" />
+          </div>
+          <h2 style="font-size: 1.5rem; margin-bottom: 0.35rem; color: var(--text-heading);">Madhulatha Konka</h2>
+          <p style="color: var(--primary); font-weight: 700; margin-bottom: 0.75rem;">MERN Full Stack Developer</p>
+          
+          <div style="display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 1.25rem;">
+            <span class="project-tag" style="background: rgba(99, 102, 241, 0.15); color: var(--primary); font-weight: 600;">⚛️ React.js</span>
+            <span class="project-tag" style="background: rgba(16, 185, 129, 0.15); color: var(--accent-emerald); font-weight: 600;">🟩 Node.js</span>
+            <span class="project-tag" style="background: rgba(245, 158, 11, 0.15); color: var(--accent-amber); font-weight: 600;">⚡ Express.js</span>
+            <span class="project-tag" style="background: rgba(6, 182, 212, 0.15); color: var(--secondary); font-weight: 600;">🗄️ SQL & DB</span>
+            <span class="project-tag" style="background: rgba(168, 85, 247, 0.15); color: var(--accent-purple); font-weight: 600;">🍃 MongoDB</span>
+            <span class="project-tag" style="background: rgba(244, 63, 94, 0.15); color: var(--accent-rose); font-weight: 600;">🐍 Python</span>
+          </div>
+          
+          <div class="about-quick-facts">
+            <div class="fact-item"><div class="fact-label">Location</div><div class="fact-value">Anantapur, AP</div></div>
+            <div class="fact-item"><div class="fact-label">Phone</div><div class="fact-value">+91 6309194613</div></div>
+            <div class="fact-item"><div class="fact-label">Education</div><div class="fact-value">B.Tech ECE (8.1)</div></div>
+            <div class="fact-item"><div class="fact-label">Languages</div><div class="fact-value">English, Telugu</div></div>
+          </div>
+        </div>
+
+        <!-- Right: In-depth Story -->
+        <div class="glass-card" style="padding: 2.5rem; display: flex; flex-direction: column; gap: 1.5rem;">
+          <h3 style="font-size: 1.6rem; color: var(--text-heading);">Professional Summary</h3>
+          
+          <p class="about-intro-text">
+            Results-driven MERN Full Stack Developer (B.Tech ECE, CGPA 8.1) with proven ability to design, build, and deploy responsive, full-stack web applications using React.js, Node.js, Express.js, and MongoDB. Proficient in REST API design, JSON data handling, and SQL-based data management.
+          </p>
+
+          <p class="about-intro-text">
+            Certified in Python Full Stack Development and Responsive Web Design; recognized for writing clean, maintainable code and rapidly mastering new frameworks. Eager to bring strong full-stack fundamentals and a fast learning curve to a growth-focused engineering team.
+          </p>
+
+          <h4 style="font-size: 1.2rem; color: var(--secondary); margin-top: 0.5rem;">Core Competencies:</h4>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; color: var(--text-secondary); font-size: 0.95rem;">
+            <li>⚛️ <strong>MERN Stack:</strong> React.js, Node.js, Express.js, MongoDB, JavaScript ES6+.</li>
+            <li>🌐 <strong>Frontend Engineering:</strong> HTML5, CSS3, Bootstrap, Responsive Web Design, MVC Architecture.</li>
+            <li>🔌 <strong>Backend & APIs:</strong> REST API Design & Integration, JSON Data Handling, Python, OOP.</li>
+            <li>🗄️ <strong>Databases & Tools:</strong> MongoDB, SQL, Database Queries, Git, GitHub, VS Code, Google Colab.</li>
+            <li>🤖 <strong>AI-Assisted Development:</strong> Claude, ChatGPT, Cursor, Gemini, Perplexity, Antigravity IDE.</li>
+          </ul>
+
+          <div style="display: flex; gap: 1rem; margin-top: 1rem;">
+            <a href="projects.html" class="btn btn-primary">Explore Projects</a>
+            <a href="assets/Madhulatha_Konka_Resume.pdf" download="Madhulatha_Konka_Resume.pdf" class="btn btn-secondary">Download Resume PDF</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Education & Internships -->
+      <div class="section-header">
+        <div class="section-badge">Academic & Internship Credentials</div>
+        <h2 class="section-title">Education, Internships & <span class="gradient-primary">Certifications</span></h2>
+      </div>
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; margin-bottom: 4rem;">
+        
+        <!-- Education -->
+        <div class="glass-card" style="padding: 2.25rem;">
+          <h3 style="font-size: 1.35rem; margin-bottom: 1.5rem; color: var(--primary);">🎓 Education History</h3>
+          <div class="timeline-list">
+            <div class="timeline-item">
+              <div class="timeline-item-card">
+                <div class="timeline-meta">
+                  <h4 class="timeline-title">B.Tech, Electronics & Communication Engineering</h4>
+                  <span class="timeline-period">CGPA 8.1 | 2026</span>
+                </div>
+                <div class="timeline-subtitle">AnanthaLakshmi Institute of Technology & Science, Anantapur</div>
+                <p class="timeline-desc">Distinction in coursework. Core focus on digital system design, software development, data structures, and computer architecture.</p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-item-card">
+                <div class="timeline-meta">
+                  <h4 class="timeline-title">Diploma, Electronics & Communication Engineering</h4>
+                  <span class="timeline-period">CGPA 8.13 | 2023</span>
+                </div>
+                <div class="timeline-subtitle">Government Polytechnic College, Tadipatri</div>
+                <p class="timeline-desc">First Class with Distinction. Strong foundation in electronics, programming logic, and circuit analysis.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Virtual Internships & Certifications -->
+        <div class="glass-card" style="padding: 2.25rem;">
+          <h3 style="font-size: 1.35rem; margin-bottom: 1.5rem; color: var(--secondary);">📜 Internships & Certifications</h3>
+          <div class="timeline-list">
+            <div class="timeline-item">
+              <div class="timeline-item-card">
+                <div class="timeline-meta">
+                  <h4 class="timeline-title">Data Analytics & AI Agents Virtual Internship</h4>
+                  <span class="timeline-period">July 2026</span>
+                </div>
+                <div class="timeline-subtitle">Tata Consultancy Services (TCS)</div>
+                <p class="timeline-desc">Practical experience in enterprise data processing, AI agent integration, and workflow automation.</p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-item-card">
+                <div class="timeline-meta">
+                  <h4 class="timeline-title">Data Analytics Virtual Internship</h4>
+                  <span class="timeline-period">July 2026</span>
+                </div>
+                <div class="timeline-subtitle">Deloitte</div>
+                <p class="timeline-desc">Applied data analytics principles to solve realistic business strategy scenarios using SQL.</p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-item-card">
+                <div class="timeline-meta">
+                  <h4 class="timeline-title">Certified in Python Full Stack & Responsive Design</h4>
+                  <span class="timeline-period">EduSkills & NxtWave</span>
+                </div>
+                <div class="timeline-subtitle">Industry Certifications</div>
+                <p class="timeline-desc">Python Full Stack Development (EduSkills), Static & Responsive Web Design, SQL Queries, and Python Foundations (NxtWave).</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <div>&copy; 2026 Madhulatha Konka. All rights reserved.</div>
+        <a href="index.html" class="footer-link">← Back to Homepage</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/projects-data.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

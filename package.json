@@ -1,0 +1,21 @@
+{
+  "name": "auspify-portfolio",
+  "version": "1.0.0",
+  "description": "Responsive professional portfolio website for K. Madhulatha",
+  "scripts": {
+    "start": "npx serve . -l 3000",
+    "dev": "npx serve . -l 3000",
+    "deploy:vercel": "npx vercel --prod",
+    "deploy:netlify": "npx netlify deploy --prod"
+  },
+  "keywords": [
+    "portfolio",
+    "responsive",
+    "web-developer",
+    "frontend",
+    "fullstack",
+    "cloud-engineer"
+  ],
+  "author": "K. Madhulatha",
+  "license": "MIT"
+}
